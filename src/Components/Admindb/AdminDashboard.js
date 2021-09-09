@@ -5,7 +5,7 @@ import axios from 'axios'
 import DashNavBar from '../DashBoard/DashNavBar'
 import {Link} from "react-router-dom";
 import {Table} from 'react-bootstrap'
-import CustomTableRow from '../../hoc/tableRowCustom'
+import CustomTableRow from '../../hoc/TableRowCustom'
 
 
 export default function AdminDashboard() {
@@ -22,8 +22,8 @@ export default function AdminDashboard() {
 
 
             setAdminData(res.data.data)
-            console.log(adminData);
-            console.log(res.data.data);
+            // console.log(adminData);
+            // console.log(res.data.data);
         })
 
     }, [])
@@ -38,31 +38,6 @@ export default function AdminDashboard() {
         localStorage.setItem('slogan', slug)
     }
 
-    const getData = () => {
-        axios({
-            method: 'GET',
-            url: `https://emergency-report-app.herokuapp.com/api/profile/allprofiles`
-        }).then((res) => {
-
-
-            setAdminData(res.data.data)
-            console.log(adminData);
-        })
-
-    }
-    const onDelete = (_id) => {
-        axios({
-
-            method: 'delete',
-            url: `https://emergency-report-app.herokuapp.com/api/profile/delete/${_id}`,
-            headers: {
-                'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MTMzNTdkY2UxMGJjZjA3MjhlNWJkMzciLCJpYXQiOjE2MzA3NTUxNzgsImV4cCI6MTYzMzM0NzE3OH0.rQt9linzcIk9_WyqxvSahKl9B6Fhss9ioGY_dv9cc8E`
-            }
-        }).then(() => {
-            getData();
-        })
-
-    }
 
     let counter = 1;
 
@@ -90,17 +65,19 @@ export default function AdminDashboard() {
 
                 {
                     adminData.map(user => {
-                        return(
+                        return (
                             <CustomTableRow
+                                key={user._id}
                                 serialnumber={counter++}
+                                userId={user._id}
                                 address={user.address}
                                 institution={user.institution}
                                 localGovtArea={user.localGovtArea}
                                 phoneNo={user.phoneNo}
                                 slug={user.slug}
                                 linkTo={'/update'}
-                                updateClickHandler={()=> setData(user._id, user.address, user.institution, user.phoneNo, user.slug)}
-                                delete={()=> onDelete(user._id)}
+                                userObject={user}
+                                setNewData ={setAdminData}
 
                             />
                         )

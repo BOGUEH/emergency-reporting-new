@@ -6,33 +6,29 @@ import KeyboardArrowDownSharpIcon from '@material-ui/icons/KeyboardArrowDownShar
 
 export default function DashNavBar() {
     return (
-        <div className="d-flex navbarAll"> 
-              
-            
-              <div class="col-3 sideBa">
-                     <img src="../images/emergency-reporting-logo.svg" alt="logo" />
-             </div>
-             
-             <div class="col-9 d-flex" >
-                
-                <div className="float-left"> 
-                        <h3 className="heading">Overview</h3>
-                </div>
-                    
-            
-            
-          
-            <div className="float-right">    
+        <div className="d-flex navbarAll">
 
-            <h4> <NotificationsNoneSharpIcon /> 
-             <img src="../images/Ellipse1.svg" alt="" /> 
-             <input type="text" />
-             </h4>
+
+            <div className="col-3 sideBa">
+                <img src="../images/emergency-reporting-logo.svg" alt="logo"/>
             </div>
-          
-          </div>
-           
-         
+
+            <div className="col-9 d-flex">
+
+                <div className="float-left">
+                    <h3 className="heading">Overview</h3>
+                </div>
+
+
+                <div className="float-right">
+
+                    <h4><NotificationsNoneSharpIcon/>
+                        <img src="../images/Ellipse1.svg" alt=""/>
+                        <input type="text"/>
+                    </h4>
+                </div>
+
+            </div>
 
 
         </div>
