@@ -12,13 +12,13 @@ export default function Home() {
 
                             <div className="row d-flex">
 
-                                <h1>Amazing App for Reporting Emergency</h1>
+                                <h1>Report Emergency Quickly</h1>
                                 <p style={{textAlign: "justify"}}> Faced with an emergency situation, whether fire,
                                     health wise
-                                    or in an armed robbery case, report emergency
-                                    app got you covered</p>
+                                    or in an armed robbery case, emergency reporting
+                                    app got you covered.</p>
                             </div>
-                            <button className="holo-btn px-lg-5 shadow-sm" id="download-btn"> Download App</button>
+                            <button className="holo-btn px-lg-5 navbar-shadow" id="download-btn"> Download App</button>
                         </div>
 
 
@@ -35,7 +35,7 @@ export default function Home() {
                         <div className="d-flex align-items-center justify-content-center">
                             <div className="col align-self-start">
                                 <h1 className="text-center"> Alert a Family Member When in Distress</h1>
-                                <p className="text-center">This feature enables you to register the details of a close
+                                <p className="text-center col-md-8 offset-md-2" >This feature enables you to register the details of a close
                                     relative in case of an emergency. A call is placed directly to the registered number
                                     to inform the person of your current situation and location.</p>
                             </div>
@@ -128,7 +128,7 @@ export default function Home() {
                                         <div className="carousel-item active" data-bs-interval="10000">
 
                                             <div>
-                                                <p className="text-center" style={{color:'rgb(255, 255, 255, .8)'}}> Really nice app. This Report Emergency app
+                                                <p className="text-center col-md-6 offset-md-3" style={{color:'rgb(255, 255, 255, .8)'}}> Really nice app. This Report Emergency app
                                                     is really useful to reach emergency contacts in
                                                     my phone. Design of the app is also very clear
                                                     and easy to use.
@@ -170,7 +170,7 @@ export default function Home() {
 
 
                 {/* this is the begining of Download App */}
-                <section>
+                <section id="app">
                     <div id="download" className="row">
 
                         <div className="col">
