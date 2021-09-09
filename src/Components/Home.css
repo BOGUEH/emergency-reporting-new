@@ -1,0 +1,31 @@
+.heroic-btn {
+    padding: 13px 50px !important;
+}
+
+.holo-btn{
+    border: 2px solid #FF6E6F !important;
+    background-color: #FF6E6F !important;
+    color:white !important;
+}
+.holo-btn:hover{
+     border: 2px solid #FF6E6F !important;
+     background-color: white !important;
+     color:#FF6E6F !important;
+     transition: 0.3s ease-in;
+ }
+
+.img-heroic-app{
+    height: 85vh;
+    vertical-align: center;
+    text-align: center;
+}
+
+.testimony{
+    background-color: #FF6E6F;
+    color: white;
+    padding: 50px 30px !important;
+}
+
+#home{
+    padding: 4% 5% 0% 5% !important;
+}

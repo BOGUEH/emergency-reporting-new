@@ -1,57 +1,60 @@
-.App{
+.App {
 
 
-background: #FFFFFF;
+    background: #FFFFFF;
 
 }
+
 /* Emergency Reporting just got way Cooler!!! */
-#navbar{
+#navbar {
     position: fixed;
     width: 100%;
-
 }
 
-.second-paragraph{
-  
+.second-paragraph {
+
     padding-right: 10%;
     padding-left: 10%;
 }
 
-.testimony{
+.testimony {
     background-color: #FFF6F6;
     padding: 80px;
 }
 
-section{
-    padding-top: 3%;
-    padding-bottom: 50px;
+section {
+    padding-top: 5%;
+    padding-bottom: 0px;
 }
-#features{
+
+#features {
     background-color: #FFF6F6;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-right: 10%;
     padding-left: 10%;
 }
 
-.img-download-btn{
+.img-download-btn {
     size: 10px;
 }
 
-button.img-download-btn{
+button.img-download-btn {
 
     margin: 20px;
     border-radius: 10px;
     height: 80px;
- 
+
 }
-#play-logo{
+
+#play-logo {
     height: 60px;
 }
 
-.d-block{
+.d-block {
     height: 80px;
 }
-#footer{
+
+#footer {
     background-color: #FF6E6F;
     color: white;
     padding-left: 10%;
@@ -59,75 +62,100 @@ button.img-download-btn{
     padding-top: 70px;
     padding-bottom: 150px;
     font-size: 20px;
-  
-   
-}
-.social-logo{
-    padding-top: 50px;
-}
-.first-line{
-    padding-right: 40px;
-}
-.nav-link{
-    text-decoration:none;
-    color: white;
-}
-#download1{
-   color: #FF6E6F;
-  
-border-style: solid;
-padding: 10px 20px;
-border-radius: 20px;
-}
-img.social-logo1{
-    height: 50px;
-    padding:10px;
-}
-#download-btn{
-        background-color: #FF6E6F;
-        color: white;
-       border-style: solid;
-       border-color: #FF6E6F;
-        padding: 10px 20px;
-        border-radius: 50px;
-     
+
+
 }
 
-.footLogo{
+.footer-btn {
+    color: white;
+    background-color: #FF6E6F;
+    border: 2px solid white;
+    transition: 0.3s ease-in;
+}
+
+.footer-btn:hover {
+    color: #FF6E6F;
+    background-color: white;
+    border: 2px solid #FF6E6F;
+    transition: 0.3s ease-in;
+}
+
+.social-logo {
+    padding-top: 50px;
+}
+
+.first-line {
+    padding-right: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #FF6E6F !important;
+    transition: 0.3s ease-in;
+}
+
+.nav-link:active {
+    color: #FF6E6F;
+    font-weight: bold;
+}
+
+
+#download1 {
+    color: #FF6E6F;
+
+    border-style: solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+img.social-logo1 {
+    height: 50px;
+    padding: 10px;
+}
+
+#download-btn {
+    background-color: #FF6E6F;
+    color: white;
+    border-style: solid;
+    border-color: #FF6E6F;
+    padding: 10px 20px;
+    border-radius: 50px;
+
+}
+
+.footLogo {
     padding-bottom: 50px;
     padding-right: 20px;
     width: 20px;
     margin-left: -20px;
 }
 
-.nav-link:hover{
-    color: black !important;
-}
-.nav-link:active{
-    color: rgb(197, 189, 196);
-}
 
-li{
+li {
     padding: 10px 30px;
-   
-}
-#home{
-    padding: 4% 5%;
+
 }
 
-.first-content{
-    padding: 10%;
+.first-content {
+    padding: 15% 70px;
 }
-.first-content-text{
+
+.first-content-text {
     padding: 15% !important;
 }
 
-.usability{
+.usability {
     padding: 20px 8%;
 }
-.first-paragraph{
+
+.first-paragraph {
     padding: 10px;
 }
-.forth-content{
+
+.forth-content {
     padding: 12% 0%;
 }

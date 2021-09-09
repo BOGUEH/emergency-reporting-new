@@ -1,0 +1,20 @@
+.heroic-btn {
+    padding: 13px 50px !important;
+}
+
+.holo-btn{
+    border: 2px solid #FF6E6F !important;
+    background-color: #FF6E6F !important;
+    color:white !important;
+}
+.holo-btn:hover{
+    border: 2px solid #FF6E6F !important;
+    background-color: white !important;
+    color:#FF6E6F !important;
+    transition: 0.3s ease-in;
+}
+
+.navbar-shadow {
+    box-shadow: 0 .1rem .7rem rgba(0,0,0,.2)!important;
+}
+

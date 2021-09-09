@@ -1,12 +1,11 @@
 
-.container{ 
+.container {
     height: 100vh !important;
-    width: 100vh !important; 
+    width: 100vh !important;
 
 }
 
-.forms{
-
+.forms {
     padding: 20px;
     font-size: 16px;
     font-style: normal;
@@ -15,32 +14,29 @@
     border-radius: 10px;
     border-width: 2px;
     margin: 10px;
-
-   
-
 }
 
 
-
-button{
+button {
     padding: 5px 10px;
     border-radius: 10px;
-    background-color: #F84647;
-    border-color: #F84647;
+    background-color: #FF6E6F;
+    border-color: #FF6E6F;
     color: white;
     font-size: 20px;
 }
 
 
-p{
+p {
     color: gray;
 }
 
 
-.contactbtn{
+.contactbtn {
     background-color: white;
-    color: #F84647;
+    color: #FF6E6F;
 }
-.small{
+
+.small {
     font-size: 10px;
 }

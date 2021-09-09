@@ -21,8 +21,8 @@ input{
 button{
     padding: 5px 10px;
     border-radius: 10px;
-    background-color: #F84647;
-    border-color: #F84647;
+    background-color: #FF6E6F;
+    border-color: #FF6E6F;
     color: white;
     font-size: 20px;
 }
@@ -37,7 +37,7 @@ p{
 
 
 a{
-    color:#F84647;
+    color:#FF6E6F;
     text-decoration: none;
     
 }

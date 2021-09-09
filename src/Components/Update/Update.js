@@ -103,8 +103,8 @@ export default function AddAdmin() {
                                                             <option value="RSS">RSS</option>
 
                                                         </select>
-                             <input type="number" className="forms container-fluid"
-                              placeholder="Enter Phone Contact" 
+                             <input type="number" value={localStorage.getItem("PhoneNo")} className="forms container-fluid"
+                              placeholder="Enter Phone Contact"
                               onChange={(e)=>setPhoneNo(e.target.value)}
                               />
                             </div>

@@ -30,7 +30,7 @@ export default function AdminDashboard() {
 
 
     const setData = (_id, address, institution, phoneNo, slug) => {
-        console.log(_id, address, institution, phoneNo, slug);
+        //console.log(_id, address, institution, phoneNo, slug);
         localStorage.setItem('ID', _id)
         localStorage.setItem('Address', address)
         localStorage.setItem('Institution', institution)
@@ -41,12 +41,10 @@ export default function AdminDashboard() {
 
     let counter = 1;
 
-
     return (
 
         <div>
             <DashNavBar/>
-
 
             <Table striped bordered hover>
                 <thead>
@@ -62,7 +60,6 @@ export default function AdminDashboard() {
                 </thead>
                 <tbody>
 
-
                 {
                     adminData.map(user => {
                         return (
@@ -77,13 +74,13 @@ export default function AdminDashboard() {
                                 slug={user.slug}
                                 linkTo={'/update'}
                                 userObject={user}
-                                setNewData ={setAdminData}
+                                setNewData={setAdminData}
+                                updateClickHandler={setData}
 
                             />
                         )
                     })
                 }
-
                 </tbody>
             </Table>
         </div>

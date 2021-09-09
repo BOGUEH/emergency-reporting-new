@@ -4,7 +4,6 @@ import axios from "axios";
 
 const TableRowCustom = (props) => {
 
-
     const getData = () => {
         axios({
             method: 'GET',
@@ -14,12 +13,11 @@ const TableRowCustom = (props) => {
             props.setNewData(res.data.data)
             // setAdminData(res.data.data)
             // console.log(adminData);
+            alert("User deleted successfully!")
         })
     }
 
     const onDelete = async (_id) => {
-        console.log(_id)
-
         await axios({
             method: 'delete',
             url: `https://emergency-report-app.herokuapp.com/api/profile/delete/${_id}`,
@@ -42,14 +40,13 @@ const TableRowCustom = (props) => {
             <td>
                 <Link to={props.linkTo}>
                     <button className="btn btn-success"
-                            onClick={() => props.updateClickHandler}>Update</button> {}
+                            onClick={() => props.updateClickHandler(props.userObject._id, props.userObject.address, props.userObject.institution, props.userObject.phoneNo, props.userObject.slug)}>Update</button>
                 </Link>
                 <button className="btn btn-danger"
                         onClick={() => onDelete(props.userId)}>Delete</button>
-
             </td>
         </tr>
     )
-} 
+}
 
 export default TableRowCustom;
