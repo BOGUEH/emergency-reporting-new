@@ -42,7 +42,7 @@ export default function Home() {
                         </div>
 
                         <div className="d-flex justify-content-center">
-                            <img src="./images/SingleIphone.svg" alt=""/>
+                            <img className="home-section2-image" src="./images/SingleIphone.svg" alt=""/>
                         </div>
 
                     </div>
