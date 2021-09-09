@@ -33,3 +33,7 @@
 .home-section2-image{
     margin-top: -125px;
 }
+
+.img-download-btn:hover{
+    box-shadow: 0 .1rem .7rem rgba(0,0,0,.3)!important;
+}

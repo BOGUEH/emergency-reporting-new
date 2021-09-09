@@ -41,7 +41,7 @@ export default function NavBar() {
                                         </li>
                                         <li className="nav-item">
                                             <Link to="/signin">
-                                                <a className="nav-link" id="download1" href="#download"> LogIn</a>
+                                                <button  href="#download"  id="download-btn" className="holo-btn px-lg-5 shadow-sm"> Log in</button>
                                             </Link>
                                         </li>
                                     </ul>
