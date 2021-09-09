@@ -5,6 +5,7 @@ import axios from 'axios'
 import DashNavBar from '../DashBoard/DashNavBar'
 import {Link} from "react-router-dom";
 import {Table} from 'react-bootstrap'
+import CustomTableRow from '../../hoc/tableRowCustom'
 
 
 export default function AdminDashboard() {
@@ -75,74 +76,41 @@ export default function AdminDashboard() {
             <Table striped bordered hover>
                 <thead>
                 <tr>
-
-                    <th scope="col"> S/N</th>
-                    <th scope="col"> Address</th>
-                    <th scope="col">Institution</th>
-                    <th scope="col">Local Government Area</th>
-                    <th scope="col">Phone No</th>
-                    <th scope="col">Slug</th>
-                    <th scope="col">Action</th>
+                    <th>S/N</th>
+                    <th>Address</th>
+                    <th>Institution</th>
+                    <th>L.G.A</th>
+                    <th>Phone No</th>
+                    <th>Slug</th>
+                    <th>Action</th>
                 </tr>
                 </thead>
-            </Table>
+                <tbody>
 
 
-            {
-                adminData.map((user, i) => {
-                        return (
-                            <div key={i} className="Deal Note">
-                                <Table striped bordered hover>
+                {
+                    adminData.map(user => {
+                        return(
+                            <CustomTableRow
+                                serialnumber={counter++}
+                                address={user.address}
+                                institution={user.institution}
+                                localGovtArea={user.localGovtArea}
+                                phoneNo={user.phoneNo}
+                                slug={user.slug}
+                                linkTo={'/update'}
+                                updateClickHandler={()=> setData(user._id, user.address, user.institution, user.phoneNo, user.slug)}
+                                delete={()=> onDelete(user._id)}
 
-                                    <tbody>
-                                    <tr key={i} className="Deal Note">
-
-                                        <td>{counter++}</td>
-                                        <td>
-                                            {user.address}
-                                        </td>
-                                        <td>
-                                            {user.institution}
-                                        </td>
-                                        <td>
-                                            {user.localGovtArea}
-
-                                        </td>
-                                        <td>
-                                            {user.phoneNo}
-
-                                        </td>
-                                        <td>
-                                            {user.slug}
-
-                                        </td>
-                                        <td>
-                                            <Link to='./update'>
-                                                <button className="btn btn-success"
-                                                        onClick={() => setData(user._id, user.address,
-                                                            user.institution, user.phoneNo, user.slug)}>Update
-                                                </button>
-                                            </Link>
-
-                                            <button className="btn btn-danger"
-                                                    onClick={() => onDelete(user._id)}
-                                            >Delete
-                                            </button>
-
-                                        </td>
-
-                                    </tr>
-                                    </tbody>
-                                </Table>
-
-                            </div>
-
+                            />
                         )
-                    }
-                )
-            }
+                    })
+                }
 
-
+                </tbody>
+            </Table>
         </div>
+
     )
 }
+
