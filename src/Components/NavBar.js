@@ -32,7 +32,7 @@ export default function NavBar() {
                                             <a className="nav-link navbar-link-item" href="#features">FEATURES</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link navbar-link-item" href="#FAQs">FAQS</a>
+                                            <a className="nav-link navbar-link-item" href="#app">Our App</a>
                                         </li>
                                         <li className="nav-item">
                                             <Link to="/Mversion">
