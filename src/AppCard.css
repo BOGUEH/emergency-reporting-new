@@ -92,3 +92,10 @@
     flex-grow: 1;
     flex: fit-content;
 }
+
+
+.admin-dashboard-search{
+    border: 1px solid #eee;
+    height: 40px;
+    float: right;
+}

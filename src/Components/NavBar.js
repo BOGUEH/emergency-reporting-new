@@ -36,7 +36,7 @@ export default function NavBar() {
                                         </li>
                                         <li className="nav-item">
                                             <Link to="/Mversion">
-                                                <a className="nav-link" id="download1" href="#download">Quick help</a>
+                                                <a className="nav-link quick-help" id="download1" href="#download">Quick help</a>
                                             </Link>
                                         </li>
                                         <li className="nav-item">

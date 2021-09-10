@@ -59,10 +59,21 @@ export default function PoliceService() {
         })
 
     }
+    const queryData = async (e) => {
+        const queryString = e.target.value;
+
+        // return queryString==user.address || queryString==user.institution || queryString==user.localGovtArea || queryString==user.phoneNo || queryString==user.slug;
+
+        const newDataArray = await adminData.filter(user => {
+            return queryString=="";
+        })
+        console.log(newDataArray)
+    }
 
     let counter = 1;
     return (
         <div className="roadsafety-container">
+            <input className="admin-dashboard-search" onChange={queryData} type="text" placeholder="Search..."/>
             <Table striped bordered hover>
                 <thead>
                 <tr>
