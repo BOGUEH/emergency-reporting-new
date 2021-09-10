@@ -15,7 +15,7 @@ export default function AddAdmin() {
     const Update = () => {
         axios({
             method: 'put',
-            url: `http://emergency-report-app.herokuapp.com/api/profile/update/${_id}`,
+            url: `https://emergency-report-app.herokuapp.com/api/profile/update/${_id}`,
             headers: {
                 'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MTMzNTdkY2UxMGJjZjA3MjhlNWJkMzciLCJpYXQiOjE2MzA3NTUxNzgsImV4cCI6MTYzMzM0NzE3OH0.rQt9linzcIk9_WyqxvSahKl9B6Fhss9ioGY_dv9cc8E`
             },

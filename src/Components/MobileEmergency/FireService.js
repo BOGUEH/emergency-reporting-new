@@ -52,7 +52,7 @@ export default function FireService() {
         axios({
 
             method: 'delete',
-            url: `http://emergency-report-app.herokuapp.com/api/profile/delete/${_id}`,
+            url: `https://emergency-report-app.herokuapp.com/api/profile/delete/${_id}`,
             headers: {
                 'Authorization': `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOiI2MTMzNTdkY2UxMGJjZjA3MjhlNWJkMzciLCJpYXQiOjE2MzA3NTUxNzgsImV4cCI6MTYzMzM0NzE3OH0.rQt9linzcIk9_WyqxvSahKl9B6Fhss9ioGY_dv9cc8E`
             }
