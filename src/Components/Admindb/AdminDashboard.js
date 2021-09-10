@@ -36,7 +36,7 @@ export default function AdminDashboard() {
         // return queryString==user.address || queryString==user.institution || queryString==user.localGovtArea || queryString==user.phoneNo || queryString==user.slug;
 
         const newDataArray = await adminData.filter(user => {
-            return queryString=="";
+            return queryString == "";
         })
         console.log(newDataArray)
     }
@@ -56,7 +56,10 @@ export default function AdminDashboard() {
 
     return (
 
-        <div className="admin-dashboard-data-container" >
+        <div className="admin-dashboard-data-container">
+            <Link to="/create">
+                <button>Create</button>
+            </Link>
             <input className="admin-dashboard-search" onChange={queryData} type="text" placeholder="Search..."/>
             <Table striped bordered hover>
                 <thead>
