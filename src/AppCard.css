@@ -1,0 +1,94 @@
+.person-card {
+    border-radius: 6px;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 5px #ccc;
+    margin: 10px 10px;
+    padding: 20px 30px;
+    background-color: white;
+    width: 18%;
+    display: inline-grid;
+    overflow: auto;
+    text-align: center;
+    line-height: .5;
+}
+
+.person-edit-btn {
+    background-color: #098d77;
+    color: #ffffff;
+    padding: 15px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #098d77;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.person-edit-btn:hover {
+    background-color: white;
+    color: #098d77;
+    border: 2px solid #098d77;
+    transition: .2s ease-in;
+}
+
+.person-delete-btn {
+    background-color: #EE2852FF;
+    color: #ffffff;
+    padding: 15px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #EE2852FF;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.person-delete-btn:hover {
+    background-color: white;
+    color: #EE2852FF;
+    border: 2px solid #EE2852FF;
+    transition: .2s ease-in;
+}
+
+.person-image {
+    text-align: center;
+    width: 150px;
+    /*box-shadow: 1px 1px 5px #ccc;*/
+}
+
+.person-hr {
+    border: 1px solid #f6f6f6;
+    width: 95%;
+}
+
+.person-static-container {
+    width: 100%;
+}
+
+.editing-notice-text {
+    background-color: rgba(255, 165, 0, 0.59);
+    color: #333;
+    padding: 10px;
+    transition: 1s ease-in;
+    border-radius: 4px;
+}
+
+.person-lecturer {
+    background-color: rgba(68, 250, 188, 0.27);
+    color: #333;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.person-student {
+    background-color: rgba(250, 198, 68, 0.27);
+    color: #333;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.person-btn{
+    flex-grow: 1;
+    flex: fit-content;
+}

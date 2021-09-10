@@ -35,7 +35,8 @@ export default function Home() {
                         <div className="d-flex align-items-center justify-content-center">
                             <div className="col align-self-start">
                                 <h1 className="text-center"> Alert a Family Member When in Distress</h1>
-                                <p className="text-center col-md-8 offset-md-2" >This feature enables you to register the details of a close
+                                <p className="text-center col-md-8 offset-md-2">This feature enables you to register the
+                                    details of a close
                                     relative in case of an emergency. A call is placed directly to the registered number
                                     to inform the person of your current situation and location.</p>
                             </div>
@@ -128,7 +129,9 @@ export default function Home() {
                                         <div className="carousel-item active" data-bs-interval="10000">
 
                                             <div>
-                                                <p className="text-center col-md-6 offset-md-3" style={{color:'rgb(255, 255, 255, .8)'}}> Really nice app. This Report Emergency app
+                                                <p className="text-center col-md-6 offset-md-3"
+                                                   style={{color: 'rgb(255, 255, 255, .8)'}}> Really nice app. This
+                                                    Report Emergency app
                                                     is really useful to reach emergency contacts in
                                                     my phone. Design of the app is also very clear
                                                     and easy to use.
@@ -141,7 +144,8 @@ export default function Home() {
                                                 <img src="./images/Ellipse1.svg" className="d-block w-50" alt="..."/>
                                             </div>
                                             <h4 className="text-center"> Susan Adeleke</h4>
-                                            <p className="text-center" style={{color:'rgb(255, 255, 255, .8)'}}> Secondary School Teacher</p>
+                                            <p className="text-center"
+                                               style={{color: 'rgb(255, 255, 255, .8)'}}> Secondary School Teacher</p>
 
                                         </div>
 

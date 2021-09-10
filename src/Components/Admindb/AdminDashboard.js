@@ -11,6 +11,7 @@ import CustomTableRow from '../../hoc/TableRowCustom'
 export default function AdminDashboard() {
     const [adminData, setAdminData] = useState([])
     const [loading, setLoading] = useState(true)
+    const [searchFinalData, setSearchFinalData] = useState([]);
 
 
     useEffect(() => {
@@ -29,6 +30,18 @@ export default function AdminDashboard() {
     }, [])
 
 
+    const queryData = async (e) => {
+        const queryString = e.target.value;
+
+        // return queryString==user.address || queryString==user.institution || queryString==user.localGovtArea || queryString==user.phoneNo || queryString==user.slug;
+
+        const newDataArray = await adminData.filter(user => {
+            return queryString=="";
+        })
+        console.log(newDataArray)
+    }
+
+
     const setData = (_id, address, institution, phoneNo, slug) => {
         //console.log(_id, address, institution, phoneNo, slug);
         localStorage.setItem('ID', _id)
@@ -44,6 +57,7 @@ export default function AdminDashboard() {
     return (
 
         <div className="admin-dashboard-data-container" >
+            <input className="admin-dashboard-search" onChange={queryData} type="text" placeholder="Search..."/>
             <Table striped bordered hover>
                 <thead>
                 <tr>

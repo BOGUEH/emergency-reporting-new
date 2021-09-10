@@ -3,3 +3,9 @@
     padding-top: 100px;
     margin: 0px 20px;
 }
+
+.admin-dashboard-search{
+    border: 1px solid #eee;
+    height: 40px;
+    float: right;
+}
