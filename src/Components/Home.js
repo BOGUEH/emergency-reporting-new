@@ -179,7 +179,7 @@ export default function Home() {
 
                         <div className="col forth-content">
                             <div className="justify-content-center align-content-center">
-                                <h1 className="text-center">Help is just a tap away</h1>
+                                <h1 className="">Help is just a tap away</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus
                                     commodo id volutpat congue cursus urna, pellentesque faucibus.
                                     Sagittis porttitor pretium, urna elit

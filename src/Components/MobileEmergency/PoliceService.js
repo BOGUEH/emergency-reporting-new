@@ -6,7 +6,7 @@ import DashNavBar from '../DashBoard/DashNavBar'
 import {Table} from 'react-bootstrap'
 import './RoadSafety.css'
 
-export default function Roadsafety() {
+export default function PoliceService() {
 
 
     const [adminData, setAdminData] = useState([])
@@ -63,7 +63,6 @@ export default function Roadsafety() {
     let counter = 1;
     return (
         <div className="roadsafety-container">
-
             <Table striped bordered hover>
                 <thead>
                 <tr>
@@ -81,7 +80,7 @@ export default function Roadsafety() {
                 <tbody>
                 {
                     adminData.map((user, i) =>
-                        user.institution === 'Road Safety Service' ?
+                        user.institution === 'Nigeria Police Service' ?
 
                             <tr key={i} className="Deal Note">
 

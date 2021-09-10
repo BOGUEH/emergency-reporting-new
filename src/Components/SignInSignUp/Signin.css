@@ -1,0 +1,84 @@
+
+.form {
+    padding: 10%;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+
+
+}
+
+input {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+
+    border-width: 2px;
+    border-color: rgb(180, 175, 175);
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #FF6E6F;
+    border-color: #FF6E6F;
+    color: white;
+    font-size: 20px;
+}
+
+.formend {
+    padding: 20px;
+
+}
+
+p {
+    color: gray;
+}
+
+
+a {
+    color: #FF6E6F;
+    text-decoration: none;
+
+}
+
+.signin-form{
+    border: 1px solid #eee;
+    padding:60px 40px;
+    box-shadow: 0 .1rem .7rem rgba(0,0,0,.4)!important;
+    background-color: white;
+}
+
+
+.signin-login-text{
+    margin-top: 30px;
+}
+.MuiSvgIcon-root{
+    position: relative;
+    top: -50px !important;
+    left: 450px !important;
+    cursor: pointer;
+}
+
+.signin-form-field{
+    border:2px solid #FF6E6F;
+    transition: .3s ease-in;
+}
+.signin-form-field:focus{
+    border:2px solid #FF6E6F !important;
+    transition: .2s ease-in;
+}
+
+.signin-container{
+
+}
+
+.formend{
+    padding-left: 0px !important;
+}
+
+a:hover {
+    color: #333 !important;
+    transition: .3s ease-in;
+}
